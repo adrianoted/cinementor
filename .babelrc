@@ -1,0 +1,33 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "actions": "./store/actions",
+          "components": "./components",
+          "shared": "./components/shared",
+          "ui": "./components/ui",
+          "styles": "./styles",
+          "constants": "./utils/constants",
+          "helpers": "./utils/helpers",
+          "utils": "./utils"
+        }
+      }
+    ],
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
+}
