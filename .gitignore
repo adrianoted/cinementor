@@ -15,7 +15,7 @@
 # misc
 /.vscode
 .DS_Store
-# .env commented just for example
+.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
