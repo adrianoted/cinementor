@@ -40,7 +40,6 @@ const List = (props) => {
 
     return (
         <Grid>
-            {/* <Flex justifyContent="space-between"> */}
             <ListHeader>
                 <h1>{label}</h1>
                 { goBackBtn && (
@@ -63,7 +62,8 @@ const List = (props) => {
                     </GridItem>
 
                     <Grid
-                        cols="repeat(auto-fit, minmax(335px, 1fr))"
+                        cols="repeat(auto-fit, minmax(345px, 1fr))"
+                        colsXS
                         gap="25px"
                         pdd="20px"
                         rows="1fr" autoRows="1fr"

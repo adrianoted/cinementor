@@ -86,12 +86,14 @@ class Carousel extends React.Component {
             default: slidesToScrollOnResize = 1; break;
         }
 
+        const speedOnMobile = windowWidth > "768" ? 1100: 500;
+
         // settings for the carousel
         const settings = {
             infinite: true,
             slidesToShow: 1,
             variableWidth: true,
-            speed: 1100,
+            speed: speedOnMobile,
             slidesToScroll: slidesToScrollOnResize,
             initialized: true,
             arrows: true,

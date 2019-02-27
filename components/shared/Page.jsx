@@ -34,7 +34,7 @@ class Layout extends React.Component {
     }
 
     // if route changes close the sideDrawer
-    componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps) {
         if (this.props.route !== prevProps.route) {
             this.setState({ showSideDrawer: false });
             window.scrollTo(0, 0)
@@ -59,7 +59,7 @@ class Layout extends React.Component {
             return (
                 <ThemeProvider theme={theme}>
                     <React.Fragment>
-                        <Head title="Cine Mentor - Next Web App" />
+                        <Head title="Cine Mentor - NextJS Web App" />
                         <GlobalStyle />
                         <Error />
                     </React.Fragment>

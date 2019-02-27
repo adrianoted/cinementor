@@ -105,6 +105,12 @@ const SearchForm = styled.div`
         transition: background-color .300s ease-in-out;
          background-color: ${props => props.theme.color.one};
     }
+    
+    @media (max-width: 580px) {
+        .react-autosuggest__container--open .react-autosuggest__suggestions-container {
+            max-height: 40vh;
+        }
+    }
 
 `;
 export default SearchForm;

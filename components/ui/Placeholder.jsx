@@ -78,6 +78,16 @@ const BackdropDetail = styled(Backdrop)`
         position:relative;
         z-index: 78;
     }
+
+    @media (max-width: 768px) {
+        align-content: baseline;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0; 
+        .isvg{
+            max-width: 300px;
+        }
+    }
+
 `;
 
 const BackdropTile = styled(Backdrop)`

@@ -130,6 +130,25 @@ const Pagination = styled.div`
   }
 }
 
+  @media (max-width: 480px) {
+    .pagination {
+      display: flex;
+      justify-content: space-around;
+      height: 100%;
+    }
+    .pagination li {
+      padding: 0;
+      align-self: center;
+    }
+    .pagination a,
+    .pagination span {
+      min-width: 30px;
+      height: 30px;
+      line-height: 28px;
+      font-size: 12px;
+    }
+  }
+
 `;
 
 export default Pagination;
