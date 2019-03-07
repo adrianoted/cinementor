@@ -2,7 +2,7 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = 'CineMentor is an Open Source Movie and TV Shows Catalogue'
+const defaultDescription = "CineMentor is an Open Source Movie and TV Shows Catalogue"
 const defaultOGURL = '@adriano__ted'
 const defaultOGImage = 'https://cinementor.herokuapp.com/static/img/cover_cinementor.jpg'
 
