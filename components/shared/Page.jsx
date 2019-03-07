@@ -59,7 +59,7 @@ class Layout extends React.Component {
             return (
                 <ThemeProvider theme={theme}>
                     <React.Fragment>
-                        <Head title="Cine Mentor - NextJS Web App" />
+                        <Head title="CineMentor - NextJS Web App" />
                         <GlobalStyle />
                         <Error />
                     </React.Fragment>
@@ -69,7 +69,7 @@ class Layout extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <React.Fragment>
-                    <Head title="Cine Mentor - NextJS Web App" />
+                    <Head title="CineMentor - NextJS Web App" />
                     <GlobalStyle noScroll={this.props.isLocked} />
 
                     <Toolbar

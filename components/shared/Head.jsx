@@ -2,9 +2,9 @@ import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
-const defaultDescription = ''
-const defaultOGURL = ''
-const defaultOGImage = ''
+const defaultDescription = 'CineMentor is an Open Source Movie and TV Shows Catalogue'
+const defaultOGURL = '@adriano__ted'
+const defaultOGImage = 'https://cinementor.herokuapp.com/static/img/cover_cinementor.jpg'
 
 const Head = props => (
   <NextHead>
@@ -41,8 +41,10 @@ const Head = props => (
       content={props.description || defaultDescription}
     />
     <meta name="twitter:site" content={props.url || defaultOGURL} />
+    <meta name="twitter:creator" content="@adriano__ted" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={props.ogImage || defaultOGImage} />
+    <meta name="twitter:description" content={props.description || defaultDescription} />
+    <meta name="twitter:image" content={defaultOGImage} />
     <meta property="og:image" content={props.ogImage || defaultOGImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
