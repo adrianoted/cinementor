@@ -25,7 +25,7 @@ class DetailOverview extends Component {
 
         // circleChart
         const voteCountLabel = `${data.vote_count} votes`;
-        const votePopolarityLabel = `${data.popularity} popolarity`;
+        const votePopularityLabel = `${data.popularity} popularity`;
         const circularChartConfig = {
             strokeClr: "var(--clrTwo)",
             strokeWidth: 8,
@@ -115,7 +115,7 @@ class DetailOverview extends Component {
                             <CircularChart
                                 {...circularChartConfig}
                                 finalProgressValue={this.state.popularityPercentage}
-                                circularChartLabel={votePopolarityLabel}
+                                circularChartLabel={votePopularityLabel}
                             />
                         </Flex>
                     }
