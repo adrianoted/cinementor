@@ -22,7 +22,7 @@ class HeroInfo extends Component {
     render() {
         const { heroData } = this.props;
         const voteCountLabel = `${heroData.vote_count} votes`;
-        const votePopolarityLabel = `${heroData.popularity} popolarity`;
+        const votePopularityLabel = `${heroData.popularity} popularity`;
 
         const circularChartConfig = {
             strokeClr: "var(--clrTwo)",
@@ -50,7 +50,7 @@ class HeroInfo extends Component {
                             <CircularChart
                                 {...circularChartConfig}
                                 finalProgressValue={this.state.popularityPercentage}
-                                circularChartLabel={votePopolarityLabel}
+                                circularChartLabel={votePopularityLabel}
                             />
                         </span>
                     </Flex>
