@@ -1,6 +1,6 @@
 {
   "name": "cinementor",
-  "description": "CineMentor is an Open Source project developed with Next.js, React, Redux, styled-components. It's a Movie and TV Shows Catalogue based on The Movie Database API",
+  "description": "CineMentor is an Open Source project developed with Next.js, React, Redux, styled-components. It's a Movie and TV Show Catalogue based on The Movie Database API",
   "author": "Adriano Tedesco",
   "engines": {
     "node": "16.13.x"
